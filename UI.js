@@ -51,7 +51,7 @@ UI.prototype.update = function(){
 	term.nextLine();
 
 	term.brightBlack("Gain: ");
-	term.blue(this.config.gainRate+"%");
+	term.cyan(this.config.gainRate+"%");
 
 	var mem = process.memoryUsage();
 	term.brightBlack("\t\t\tMemory: ");
@@ -60,7 +60,7 @@ UI.prototype.update = function(){
 	term.nextLine();
 
 	term.brightBlack("Loss: ");
-	term.blue(this.config.lossRate+"%");
+	term.cyan(this.config.lossRate+"%");
 	
 	term.brightBlack("\t\t\tHeap: ");
 	term.brightBlack((mem.heapUsed/1048576).toFixed(1) + " MB");
@@ -72,14 +72,14 @@ UI.prototype.update = function(){
 	term.green(this.server.threshold);
 
 	term.brightBlack("\t\t\tClients: " )
-	term.blue(this.clients.length);
+	term.cyan(this.clients.length);
 	term.nextLine();
 
 	term.brightBlack("ABTest: ")
 	term.green(totalPercent.toFixed(1) + "%");
 
 	term.brightBlack("\t\t\tOn-to-Off: ");
-	term.blue(percentOnToOff.toFixed(1)+"%");
+	term.cyan(percentOnToOff.toFixed(1)+"%");
 	if(this.maxOnToOff) {
 		term.red(" (max: "+this.maxOnToOff.toFixed(1)+"%)")
 	}

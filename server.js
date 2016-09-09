@@ -1,6 +1,7 @@
 var strategies = {
 	naive: require('./strategy-naive'),
-	clever: require('./strategy-clever')
+	clever: require('./strategy-clever'),
+	asis: require('./strategy-asis')
 };
 
 function Server(config) {
