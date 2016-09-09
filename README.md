@@ -1,10 +1,14 @@
+## AB Test Simulation
+
+![screenshot](https://github.com/lelettrone/abtest/raw/master/screenshot.png)
+
 ### Install
 
     git clone https://github.com/lelettrone/abtest.git
     cd abtest 
     npm install
 
-### Usage
+### Run
 
     node index.js [-n clients] [-t threshlod] [-l loss] [-g gain] [-s strategy]
 
